@@ -2,6 +2,8 @@
 
 ![Iro](./screenshots/iro-branding.png "Iro")
 
+By George Brown, Matt Patterson and Josh Struve.
+
 ## Setup
 
 To setup the application
