@@ -1,4 +1,6 @@
-# Spaced Repetition Capstone
+# Iro
+
+(./screenshots/iro-branding.png "Iro")
 
 ## Setup
 
