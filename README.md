@@ -1,6 +1,6 @@
 # Iro
 
-(./screenshots/iro-branding.png "Iro")
+![Iro](./screenshots/iro-branding.png "Iro")
 
 ## Setup
 
