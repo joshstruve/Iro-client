@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import RegistrationForm from '../../components/RegistrationForm/RegistrationForm'
+import '../../../src/index.css'
 
 class RegistrationRoute extends Component {
   static defaultProps = {
@@ -15,11 +16,11 @@ class RegistrationRoute extends Component {
 
   render() {
     return (
-      <section>
+      <section className='slim-container'>
+        <h2>Sign Up</h2>
         <p>
-          Practice learning a language with the spaced reptition revision technique.
+        Iro uses spaced repetition learning to teach you the words for a variety of colors in the Japanese language.
         </p>
-        <h2>Sign up</h2>
         <RegistrationForm
           onRegistrationSuccess={this.handleRegistrationSuccess}
         />

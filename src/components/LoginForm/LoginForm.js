@@ -51,30 +51,34 @@ class LoginForm extends Component {
           {error && <p>{error}</p>}
         </div>
         <div>
-          <Label htmlFor='login-username-input'>
+          <Label htmlFor='login-username-input' hidden>
             Username
           </Label>
           <Input
             ref={this.firstInput}
             id='login-username-input'
             name='username'
+            placeholder='Username'
             required
           />
         </div>
         <div>
-          <Label htmlFor='login-password-input'>
+          <Label htmlFor='login-password-input' hidden>
             Password
           </Label>
           <Input
             id='login-password-input'
             name='password'
             type='password'
+            placeholder='Password'
             required
           />
         </div>
-        <Button type='submit'>
-          Login
-        </Button>
+        <footer>
+          <Button type='submit'>
+            Login
+          </Button>
+        </footer>
       </form>
     )
   }

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import TokenService from '../../services/token-service'
 import UserContext from '../../contexts/UserContext'
-import './Header.css'
+import '../../index.css'
 
 class Header extends Component {
   static contextType = UserContext
@@ -31,9 +31,9 @@ class Header extends Component {
   renderLoginLink() {
     return (
       <nav>
-        <Link to='/login'>Login</Link>
+        <Link to='/login' className='navlink'>Login</Link>
         {' '}
-        <Link to='/register'>Sign up</Link>
+        <Link to='/register' className='navlink'>Sign Up</Link>
       </nav>
     )
   }
@@ -43,7 +43,7 @@ class Header extends Component {
       <header>
         <h1>
           <Link to='/'>
-            Spaced repetition
+            Iro
           </Link>
         </h1>
         {TokenService.hasAuthToken()
