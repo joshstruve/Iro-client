@@ -21,7 +21,6 @@ export default function DashboardRoute() {
 		const getWords = async () => {
 			try {
 				const data = await FetchService.getWords()
-
 				const res = await data.json()
 
 				if (res.error) {
@@ -34,13 +33,13 @@ export default function DashboardRoute() {
 				setError(error)
 			}
 		}
+
 		if (!error) {
 			getWords()
 		}
 		return () => {}
 	}, [error])
-	// counts score
-	console.log(words)
+
 	return (
 		<section className='dashboard__wrapper'>
 			{!error ? (
@@ -49,7 +48,7 @@ export default function DashboardRoute() {
 					<DashboardList words={words} />
 				</>
 			) : (
-				<div>{'oopsie'}</div>
+				<div>'oopsie'</div>
 			)}
 		</section>
 	)

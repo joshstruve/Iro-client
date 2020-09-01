@@ -1,4 +1,5 @@
 import React from 'react'
+import { MdCheckCircle } from 'react-icons/md'
 
 export default function DashboardHeader({
 	name = 'Japanese',
@@ -10,7 +11,10 @@ export default function DashboardHeader({
 				<h2>Sukinairo wa?</h2>
 				<p>Learn to express your favorite color in {name}</p>
 			</div>
-			<span>{total_score}</span>
+			<span>
+				{' '}
+				<MdCheckCircle /> {total_score}
+			</span>
 		</header>
 	)
 }

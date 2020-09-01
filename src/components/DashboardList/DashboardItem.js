@@ -1,4 +1,8 @@
 import React from 'react'
+import Text from './item-components/Text'
+import Info from './item-components/Info'
+import ScoreBox from './item-components/ScoreBox'
+import ItemImage from './item-components/ItemImage'
 
 export default function DashboardItem({ word }) {
 	const {
@@ -7,35 +11,20 @@ export default function DashboardItem({ word }) {
 		correct_count,
 		incorrect_count,
 		hex,
-		script = 'black.svg',
+		script,
 	} = word
+
+	const score = correct_count / incorrect_count
+
 	return (
 		<div className='word__item__container'>
-			<div className='word__text'>
-				<p>{translation}</p> <p>{original}</p>
-			</div>
-			<div className='word__info'>
-				<p>
-					Accuracy: {correct_count}/{incorrect_count}%
-				</p>
-			</div>
-			<div className='word__score__box'>
-				<span>
-					<>icon</> {correct_count}
-				</span>
-				<>icon</> {incorrect_count}
-			</div>
-			<div className='img__container'>
-				<div
-					className='color'
-					style={{ backgroundColor: hex }}
-				>
-					<img
-						src={require(`../../img/kana/${script}`)}
-						alt='Japanese "Kana" script'
-					/>
-				</div>
-			</div>
+			<Text translation={translation} original={original} />
+			<Info score={score} />
+			<ScoreBox
+				correct_count={correct_count}
+				incorrect_count={incorrect_count}
+			/>
+			<ItemImage hex={hex} script={script} />
 		</div>
 	)
 }

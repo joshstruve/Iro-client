@@ -33,6 +33,7 @@
   "devDependencies": {
     "cypress": "^5.0.0",
     "jsonwebtoken": "^8.5.0",
+    "react-icons": "^3.11.0",
     "unfetch": "^4.1.0"
   }
 }
