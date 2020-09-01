@@ -1,166 +1,169 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: url("./img/iro-web-bg.png") center right / cover no-repeat;
-  height:100vh;
-  width:100%
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: url('./img/iro-web-bg.png') center right / cover
+		no-repeat;
+	height: 100vh;
+	width: 100%;
 }
 
 :root {
-  --font-size: calc(10px + 1vmin);
+	--font-size: calc(10px + 1vmin);
 }
 
 @font-face {
-  font-family: 'streamsterregular';
-  src: url('./fonts/streamster-webfont.eot');
-  src: url('./fonts/streamster-webfont.eot?#iefix') format('embedded-opentype'),
-       url('./fonts/streamster-webfont.woff2') format('woff2'),
-       url('./fonts/streamster-webfont.woff') format('woff'),
-       url('./fonts/streamster-webfont.ttf') format('truetype'),
-       url('./fonts/streamster-webfont.svg#streamsterregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'streamsterregular';
+	src: url('./fonts/streamster-webfont.eot');
+	src: url('./fonts/streamster-webfont.eot?#iefix')
+			format('embedded-opentype'),
+		url('./fonts/streamster-webfont.woff2') format('woff2'),
+		url('./fonts/streamster-webfont.woff') format('woff'),
+		url('./fonts/streamster-webfont.ttf') format('truetype'),
+		url('./fonts/streamster-webfont.svg#streamsterregular')
+			format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 p {
-  color: #263238;
+	color: #263238;
 }
 
 h1 {
-  font-size:10rem;
-  font-weight: 100;
-  font-family: 'streamsterregular', sans-serif;
-  text-transform: lowercase;
-  background: -webkit-linear-gradient(#880E4F, #607D8B);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin:0;
-  line-height: 1;
+	font-size: 10rem;
+	font-weight: 100;
+	font-family: 'streamsterregular', sans-serif;
+	text-transform: lowercase;
+	background: -webkit-linear-gradient(#880e4f, #607d8b);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin: 0;
+	line-height: 1;
 }
 
 h2 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  margin-bottom:0;
-  color: #263238;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	margin-bottom: 0;
+	color: #263238;
 }
 
 .logo {
-  font-size:8rem;
-  font-weight: 100;
-  font-family: 'streamsterregular', sans-serif;
-  text-transform: lowercase;
-  background: -webkit-linear-gradient(#880E4F, #607D8B);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin:0;
+	font-size: 8rem;
+	font-weight: 100;
+	font-family: 'streamsterregular', sans-serif;
+	text-transform: lowercase;
+	background: -webkit-linear-gradient(#880e4f, #607d8b);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin: 0;
 }
 
 .container {
-  max-width: 40%;
-  margin: auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-  width: 100%;
+	max-width: 40%;
+	margin: auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
 }
 
 .header {
-  width:80%;
-  display: flex;
-  flex-direction: column;
-  margin:auto;
-  justify-content: center;
-  text-align: center;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	justify-content: center;
+	text-align: center;
 }
 
 .hidden {
-  display: none;
+	display: none;
 }
 
-input{
-  padding: 15px 45px 15px 15px;
-  margin-bottom:10px;
-  border:0px;
-  border-bottom:1px solid #607D8B;
-  background-color: #ffffff;
-  color:#263238;
+input {
+	padding: 15px 45px 15px 15px;
+	margin-bottom: 10px;
+	border: 0px;
+	border-bottom: 1px solid #607d8b;
+	background-color: #ffffff;
+	color: #263238;
 }
 
 .form {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 button {
-  padding: 15px 45px;
-  border-radius:4px;
-  border: 0px;
-  background-color: #607D8B;
-  color: white;
-  margin-bottom:15px;
+	padding: 15px 45px;
+	border-radius: 4px;
+	border: 0px;
+	background-color: #607d8b;
+	color: white;
+	margin-bottom: 15px;
 }
 
 footer {
-  margin-top:15px;
+	margin-top: 15px;
 }
 
 /* link styles */
 a:link {
-  color: #263238;
-  text-decoration: none;
+	color: #263238;
+	text-decoration: none;
 }
 
 a.nav:link {
-  color: #880E4F;
-  text-decoration: none;
-  font-size: 1.5rem;
+	color: #880e4f;
+	text-decoration: none;
+	font-size: 1.5rem;
 }
 
 a:visited {
-  color: #263238;
+	color: #263238;
 }
 
 a.nav:visited {
-  color: #880E4F;
-  text-decoration: none;
+	color: #880e4f;
+	text-decoration: none;
 }
 
 a:hover {
-  color: #880E4F;
+	color: #880e4f;
 }
 
 a.nav:hover {
-  color: #880E4F;
-  text-decoration: none;
+	color: #880e4f;
+	text-decoration: none;
 }
 
 a:active {
-  color: #880E4F;
+	color: #880e4f;
 }
 
 a.nav:active {
-  color: #880E4F;
-  text-decoration: none;
+	color: #880e4f;
+	text-decoration: none;
 }
 
 .navlink {
-  margin: 0 7.5px 0 7.5px;
+	margin: 0 7.5px 0 7.5px;
 }
 
 @media screen and (max-width: 600px) {
-  .container {
-    max-width: 80%;
-  }
+	.container {
+		max-width: 80%;
+	}
 }

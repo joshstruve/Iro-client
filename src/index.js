@@ -9,12 +9,12 @@ import './index.css'
 import * as serviceWorker from './serviceWorker'
 
 ReactDOM.render(
-  <BrowserRouter>
-    <UserProvider>
-      <App />
-    </UserProvider>
-  </BrowserRouter>,
-  document.getElementById('root'),
+	<BrowserRouter>
+		<UserProvider>
+			<App />
+		</UserProvider>
+	</BrowserRouter>,
+	document.getElementById('root')
 )
 
 serviceWorker.unregister()
