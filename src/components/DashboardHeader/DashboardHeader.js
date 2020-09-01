@@ -11,16 +11,15 @@ export default function DashboardHeader({
 		<header className='dashboard__wrapper__header'>
 			{!error ? (
 				<>
-					<span className='header__text__container'>
-						<h2>Sukinairo wa?</h2>
-						<p>
-							Learn to express your favorite color in{' '}
-							{name}
-						</p>
-					</span>
-					<span>
-						<MdCheckCircle /> {total_score}
-					</span>{' '}
+					<div className='header__item'>
+						<div>
+							<h2>Sukinairo wa?</h2>
+							<p>Learn to express your favorite color in {name}.</p>
+						</div>
+					</div>
+					<div className='header__item'>
+						<MdCheckCircle className='icon'/> {total_score}
+					</div>
 				</>
 			) : (
 				<ErrorBoundary error={error} />

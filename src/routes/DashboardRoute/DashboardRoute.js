@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import DashboardHeader from '../../components/DashboardHeader/DashboardHeader'
 import DashboardList from '../../components/DashboardList/DashboardList'
 import FetchService from '../../services/fetch-service'
+import { Link } from 'react-router-dom'
 
 // wrapper
 //    header container
@@ -45,6 +46,11 @@ export default function DashboardRoute() {
 			<>
 				<DashboardHeader error={error} {...language} />
 				<DashboardList error={error} words={words} />
+				<button className='button'>
+					<Link to = '/learn'>
+						Start Learning
+					</Link>
+				</button>
 			</>
 		</section>
 	)

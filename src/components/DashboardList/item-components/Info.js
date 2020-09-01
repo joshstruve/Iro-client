@@ -6,7 +6,7 @@ export default function Info({ score }) {
 	}
 	return (
 		<div className='word__info'>
-			<p>Accuracy: {score}%</p>
+			Accuracy: {score}%
 		</div>
 	)
 }
