@@ -7,7 +7,9 @@ export default function ScoreBox({ correct_count, incorrect_count }) {
 			<span>
 				<MdCheckCircle /> {correct_count}
 			</span>
-			<MdCancel /> {incorrect_count}
+			<span>
+				<MdCancel /> {incorrect_count}
+			</span>
 		</div>
 	)
 }

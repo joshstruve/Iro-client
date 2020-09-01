@@ -42,14 +42,10 @@ export default function DashboardRoute() {
 
 	return (
 		<section className='dashboard__wrapper'>
-			{!error ? (
-				<>
-					<DashboardHeader {...language} />
-					<DashboardList words={words} />
-				</>
-			) : (
-				<div>'oopsie'</div>
-			)}
+			<>
+				<DashboardHeader error={error} {...language} />
+				<DashboardList error={error} words={words} />
+			</>
 		</section>
 	)
 }
