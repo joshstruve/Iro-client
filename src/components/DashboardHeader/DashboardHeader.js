@@ -12,13 +12,13 @@ export default function DashboardHeader({
 			{!error ? (
 				<>
 					<div className='header__item'>
+						<MdCheckCircle className='icon'/> {total_score}
+					</div>
+					<div className='header__item'>
 						<div>
 							<h2>Sukinairo wa?</h2>
 							<p>Learn to express your favorite color in {name}.</p>
 						</div>
-					</div>
-					<div className='header__item'>
-						<MdCheckCircle className='icon'/> {total_score}
 					</div>
 				</>
 			) : (
