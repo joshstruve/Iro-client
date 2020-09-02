@@ -6,11 +6,15 @@ export default function Score({
 	wordIncorrectCount,
 }) {
 	return (
-		<>
-			<MdCheckCircle />
-			<span>{wordCorrectCount}</span>
-			<MdCancel />
-			<span>{wordIncorrectCount}</span>
-		</>
+		<div className='learning-score'>
+			<div className='learning-score-box-item'>
+				<MdCheckCircle className='icon'/>
+				<span>{wordCorrectCount}</span>
+			</div>
+			<div className='learning-score-box-item'>
+				<MdCancel className='icon'/>
+				<span>{wordIncorrectCount}</span>
+			</div>
+		</div>
 	)
 }

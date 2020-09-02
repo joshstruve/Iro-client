@@ -254,6 +254,10 @@ a.button:visited {
 }
 
 .original {
+	color: gray;
+}
+
+.translation {
 	font-size: 1.5rem;
 	color: #263238;
 }
@@ -283,13 +287,16 @@ a.button:visited {
 	font-size:1.2rem;
 }
 
+.question {
+	margin-bottom:30px;
+}
+
 .learning-card {
 	max-width: 60%;
 	color:gray;
 	background-color: #ffffff7a;
 	text-align: center;
 	padding: 15px;
-	margin:15px;
 	box-shadow: 0 2.5px 5px rgba(0,0,0,0.16), 0 2.5px 5px rgba(0,0,0,0.23);
 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 	border-radius: 4px;
@@ -297,11 +304,39 @@ a.button:visited {
 	animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1; 
 	animation-fill-mode: forwards;
+	display: flex;
+    flex-direction: column;
 }
 
 .learning-card:hover {
 
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.learning-total-score {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	margin-bottom:30px;
+}
+
+.learning-score {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	margin-bottom:15px;
+}
+
+.learning-score-box-item {
+	margin-right:15px;
+	justify-items: baseline;
+	display: flex;
+}
+
+.spacer-v {
+	margin-top:15px;
 }
 
 @media screen and (max-width: 600px) {

@@ -5,9 +5,9 @@ export default function Question({ nextWord }) {
 		nextWord = nextWord.toLowerCase()
 	}
 	return (
-		<section>
-			<h2>Watashi no sukinairo wa</h2>
-			<div>My favorite color is {nextWord}</div>
+		<section className='question'>
+			<h2>Watashi no sukinairo wa ...desu.</h2>
+			<div>(My favorite color is {nextWord}.)</div>
 		</section>
 	)
 }

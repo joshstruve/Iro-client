@@ -41,8 +41,12 @@ export default function Learning() {
 
 	return (
 		<section>
-			<MdCheckCircle />
+      <div className='learning-total-score'>
+        <div className='learning-score-box-item'>
+			  <MdCheckCircle className='icon'/>
 			<span>{head && head.total_score}</span>
+      </div>
+      </div>
 			<div className='learning-card'>
 				<Question {...head} />
 				<Score {...head} />
@@ -52,7 +56,11 @@ export default function Learning() {
 						type='text'
 						placeholder='Translate the color'
 					/>
-					<button type='submit'>GUESS</button>
+          <div className='spacer-v'>
+          </div>
+          <div>
+					  <button type='submit'>Submit</button>
+          </div>
 				</form>
 			</div>
 		</section>
