@@ -1,17 +1,13 @@
-import React, { Component } from 'react'
-import { MdCheckCircle, MdCancel } from 'react-icons/md'
+import React from 'react'
 
-
-class Question extends Component {
-    render() {
-      return (
-        <section>
-          <div>
-          test
-          </div>
-        </section>
-      );
-    }
-  }
-  
-  export default Question
+export default function Question({ nextWord }) {
+	if (nextWord) {
+		nextWord = nextWord.toLowerCase()
+	}
+	return (
+		<section>
+			<h2>Watashi no sukinairo wa</h2>
+			<div>My favorite color is {nextWord}</div>
+		</section>
+	)
+}
