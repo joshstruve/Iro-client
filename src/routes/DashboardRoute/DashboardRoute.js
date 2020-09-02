@@ -25,14 +25,13 @@ export default function DashboardRoute() {
 				const data = await FetchService.getWords()
 				const res = await data.json()
 
-				if (res.error) {
+				if (!res) {
 					throw res.error
 				}
-
 				setLanguage(res.language)
 				setWords(res.words)
 			} catch (error) {
-				setError(error)
+				setError(error.message)
 			}
 		}
 
