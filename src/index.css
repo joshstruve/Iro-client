@@ -209,7 +209,13 @@ a.button:visited {
 	padding: 15px;
 	margin:15px;
 	box-shadow: 0 2.5px 5px rgba(0,0,0,0.16), 0 2.5px 5px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 	border-radius: 4px;
+}
+
+.word__item__container:hover {
+
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .header__item {
@@ -225,6 +231,11 @@ a.button:visited {
 	display: flex;
 	/* border: 1px solid #607D8B; */
 	box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.color:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .original {
@@ -259,6 +270,6 @@ a.button:visited {
 
 @media screen and (max-width: 600px) {
 	.container {
-		max-width: 80%;
+		max-width: 90%;
 	}
 }
