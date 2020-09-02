@@ -209,6 +209,7 @@ a.button:visited {
 	padding: 15px;
 	margin:15px;
 	box-shadow: 0 2.5px 5px rgba(0,0,0,0.16), 0 2.5px 5px rgba(0,0,0,0.23);
+	border-radius: 4px;
 }
 
 .header__item {
