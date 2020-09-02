@@ -10,7 +10,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background: url('./img/iro-web-bg.png') center center / cover
+	background: url('./img/iro-web-bg.png') fixed center center / cover
 		no-repeat;
 	height: 100vh;
 	width: 100%;
