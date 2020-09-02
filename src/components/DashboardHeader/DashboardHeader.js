@@ -1,6 +1,5 @@
 import React from 'react'
 import { MdCheckCircle } from 'react-icons/md'
-import ErrorBoundary from '../ErrorBoundary/ErrorBoundary'
 
 export default function DashboardHeader({
 	name = 'Japanese',
@@ -9,20 +8,22 @@ export default function DashboardHeader({
 }) {
 	return (
 		<header className='dashboard__wrapper__header'>
-			{!error ? (
+			{!error && (
 				<>
 					<div className='header__item'>
-						<MdCheckCircle className='icon'/> {total_score}
+						<MdCheckCircle className='icon' />
+						{total_score}
 					</div>
 					<div className='header__item'>
 						<div>
 							<h2>Sukinairo wa?</h2>
-							<p>Learn to express your favorite color in {name}.</p>
+							<p>
+								Learn to express your favorite color
+								in {name}.
+							</p>
 						</div>
 					</div>
 				</>
-			) : (
-				<ErrorBoundary error={error} />
 			)}
 		</header>
 	)
