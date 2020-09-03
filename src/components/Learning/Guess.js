@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { MdCheckCircle, MdCancel } from 'react-icons/md'
-import { Input, Label } from '../Form/Form'
-import Question from '../../components/Learning/item-components/Question'
+import { MdCheckCircle } from 'react-icons/md'
 import config from '../../config'
 import TokenService from '../../services/token-service'
 import Score from './item-components/Score'
@@ -12,12 +10,12 @@ export default function Guess({ setHasAnswered, answer }) {
 	// const [hasAnswered, setHasAnswered] = useState(null)
 	const handleAnswer = async (guess) => {
 		try {
-			console.log(guess)
 			const data = await fetch(
 				`${config.API_ENDPOINT}/language/guess`,
 				{
 					method: 'POST',
 					headers: {
+						'content-type': 'application/json',
 						authorization: `Bearer ${TokenService.getAuthToken()}`,
 					},
 					body: JSON.stringify(guess),
@@ -39,15 +37,13 @@ export default function Guess({ setHasAnswered, answer }) {
 		if (answer) {
 			let guess = { guess: answer }
 
-			// console.log(answer, JSON.stringify(guess))
-
 			if (!error) {
 				handleAnswer(guess)
 			}
 		}
 
 		return () => {}
-	}, [])
+	}, [answer, error])
 
 	return (
 		<>
@@ -59,10 +55,22 @@ export default function Guess({ setHasAnswered, answer }) {
 			</div>
 			<div className='learning-card'>
 				<>
-					<h2>Sugoi! You answered correctly.</h2>
+					{head && head.isCorrect ? (
+						<h2>Sugoi! You answered correctly.</h2>
+					) : (
+						<h2>Ottotto! You answered incorrectly.</h2>
+					)}
 
 					<div className='spacer-v'></div>
-					<p>Wataschi no sukinairo wa '' desu.</p>
+					<p>
+						Wataschi no sukinairo wa{' '}
+						{head && head.answer.toLowerCase()}
+						desu.
+					</p>
+					<p>
+						(My favorite color is{' '}
+						{head && head.original.toLowerCase()}.)
+					</p>
 					<div className='spacer-v'></div>
 				</>
 

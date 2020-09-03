@@ -2,16 +2,7 @@ import React, { useState, useEffect } from 'react'
 import DashboardHeader from '../../components/DashboardHeader/DashboardHeader'
 import DashboardList from '../../components/DashboardList/DashboardList'
 import FetchService from '../../services/fetch-service'
-import { Link } from 'react-router-dom'
 import ErrorBoundary from '../../components/ErrorBoundary/ErrorBoundary'
-
-// wrapper
-//    header container
-//    flex container
-//      item has a container
-//      1st. header container - translation and word
-//      2nd. info container - score
-//      3rd. image container - color box and script image
 
 export default function DashboardRoute() {
 	const [language, setLanguage] = useState({})
@@ -49,7 +40,7 @@ export default function DashboardRoute() {
 				<>
 					<DashboardHeader error={error} {...language} />
 					<DashboardList error={error} words={words} />
-					<a href="/learn">
+					<a href='/learn'>
 						<button>Start Learning</button>
 					</a>
 				</>

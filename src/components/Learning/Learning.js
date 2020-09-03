@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { MdCheckCircle, MdCancel } from 'react-icons/md'
+import { MdCheckCircle } from 'react-icons/md'
 import { Input, Label } from '../Form/Form'
 import Question from '../../components/Learning/item-components/Question'
 import config from '../../config'
@@ -10,6 +10,7 @@ export default function Learning({
 	hasAnswered,
 	setHasAnswered,
 	setAnswer,
+	handleAnswer,
 }) {
 	const [head, setHead] = useState(null)
 	const [error, setError] = useState(null)
@@ -43,11 +44,12 @@ export default function Learning({
 			getHead()
 		}
 		return () => {}
-	}, [])
+	}, [error])
 
 	const handleSubmit = (e) => {
 		e.preventDefault()
-		console.log(e.target)
+
+		// handleAnswer()
 		setHasAnswered(true)
 		console.log(hasAnswered)
 	}
