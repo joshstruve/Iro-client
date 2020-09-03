@@ -63,7 +63,7 @@ export default function Guess({ setHasAnswered, answer }) {
 
 					<div className='spacer-v'></div>
 					<p>
-						Wataschi no sukinairo wa{' '}
+						Watashi no sukinairo wa{' '}
 						{head && head.answer.toLowerCase()}
 						desu.
 					</p>

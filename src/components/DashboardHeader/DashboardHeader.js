@@ -18,8 +18,7 @@ export default function DashboardHeader({
 						<div>
 							<h2>Sukinairo wa?</h2>
 							<p>
-								Learn to express your favorite color
-								in {name}.
+								"Sukinairo wa?" means "What is your favotite color?" in {name}.
 							</p>
 						</div>
 					</div>
