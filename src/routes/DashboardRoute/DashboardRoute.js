@@ -49,9 +49,9 @@ export default function DashboardRoute() {
 				<>
 					<DashboardHeader error={error} {...language} />
 					<DashboardList error={error} words={words} />
-					<button className='button'>
-						<Link to='/learn'>Start Learning</Link>
-					</button>
+					<a href="/learn">
+						<button>Start Learning</button>
+					</a>
 				</>
 			)}
 		</section>
