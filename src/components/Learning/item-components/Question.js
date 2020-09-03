@@ -6,8 +6,8 @@ export default function Question({ nextWord }) {
 	}
 	return (
 		<section className='question'>
-			<h2>Watashi no sukinairo wa ...desu.</h2>
-			<div>(My favorite color is <i>{nextWord}</i>.)</div>
+			<h2>{nextWord}</h2>
+			<div>(Watashi no sukinairo wa ...desu.)</div>
 		</section>
 	)
 }
