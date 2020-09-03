@@ -14,7 +14,12 @@ export default function DashboardItem({ word }) {
 		script,
 	} = word
 
-	const score = correct_count / incorrect_count
+	let score = parseInt(
+		(correct_count / (incorrect_count + correct_count)) * 100
+	)
+	if (score < 0 || score === Infinity) {
+		score = 0
+	}
 
 	return (
 		<div className='word__item__container'>

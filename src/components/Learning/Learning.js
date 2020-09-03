@@ -6,9 +6,15 @@ import config from '../../config'
 import TokenService from '../../services/token-service'
 import Score from './item-components/Score'
 
-export default function Learning() {
+export default function Learning({
+	hasAnswered,
+	setHasAnswered,
+	setAnswer,
+}) {
 	const [head, setHead] = useState(null)
 	const [error, setError] = useState(null)
+	// const [hasAnswered, setHasAnswered] = useState(null)
+
 	useEffect(() => {
 		const getHead = async () => {
 			try {
@@ -39,30 +45,55 @@ export default function Learning() {
 		return () => {}
 	}, [])
 
+	const handleSubmit = (e) => {
+		e.preventDefault()
+		console.log(e.target)
+		setHasAnswered(true)
+		console.log(hasAnswered)
+	}
+
 	return (
-		<section>
-      <div className='learning-total-score'>
-        <div className='learning-score-box-item'>
-			  <MdCheckCircle className='icon'/>
-			<span>{head && head.total_score}</span>
-      </div>
-      </div>
+		<>
+			<div className='learning-total-score'>
+				<div className='learning-score-box-item'>
+					<MdCheckCircle className='icon' />
+					<span>{head && head.total_score}</span>
+				</div>
+			</div>
 			<div className='learning-card'>
 				<Question {...head} />
 				<Score {...head} />
-				<form>
-					<Label />
+				<form
+					onSubmit={
+						(e) => handleSubmit(e)
+
+						/**api call
+						 * set has answered true
+						 * 		unmount the component
+						 * 		render another
+						 * 		next button will setHasAnswered(false)
+						 *
+						 * effect call to fetch '/head'
+						 *
+						 */
+					}
+				>
+					<Label htmlFor='learn-guess-input' />
 					<Input
 						type='text'
+						id='learn-guess-input'
+						name='learn-guess-input'
+						defaultValue=''
 						placeholder='Translate the color'
+						onChange={(e) => setAnswer(e.target.value)}
+						required
 					/>
-          <div className='spacer-v'>
-          </div>
-          <div>
-					  <button type='submit'>Submit</button>
-          </div>
+					<div className='spacer-v'></div>
+					<div>
+						<button type='submit'>Submit</button>
+					</div>
 				</form>
 			</div>
-		</section>
+		</>
 	)
 }
