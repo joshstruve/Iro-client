@@ -7,7 +7,7 @@ export default function Question({ nextWord }) {
 	return (
 		<section className='question'>
 			<h2>{nextWord}</h2>
-			<div>(Watashi no sukinairo wa ...desu.)</div>
+			<div>(Watashi no sukinairo wa "{nextWord}"desu.)</div>
 		</section>
 	)
 }

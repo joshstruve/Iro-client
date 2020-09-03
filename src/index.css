@@ -92,6 +92,21 @@ h2 {
 	width: 100%;
 }
 
+.main {
+	margin:auto;
+}
+
+.container-2 {
+	max-width: 80%;
+	margin: auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+}
+
 .header {
 	width: 80%;
 	display: flex;
@@ -99,6 +114,7 @@ h2 {
 	margin: auto;
 	justify-content: center;
 	text-align: center;
+	height:100vh;
 }
 
 .hidden {
@@ -294,7 +310,7 @@ a.button:visited {
 }
 
 .learning-card {
-	max-width: 60%;
+	max-width: 50%;
 	color:gray;
 	background-color: #ffffff7a;
 	text-align: center;
