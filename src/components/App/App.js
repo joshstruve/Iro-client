@@ -21,8 +21,8 @@ export default class App extends Component {
   render() {
     const { hasError } = this.state
     return (
-      <div className='container'>
-        <Header />
+      <div>
+        {/* <Header /> */}
         <main>
           {hasError && (
             <p>There was an error! Oh no!</p>

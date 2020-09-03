@@ -3,6 +3,7 @@ import Learning from '../../components/Learning/Learning'
 import Guess from '../../components/Learning/Guess'
 import config from '../../config'
 import TokenService from '../../services/token-service'
+import Header from '../../components/Header/Header'
 
 export default function LearningRoute() {
 	const [hasAnswered, setHasAnswered] = useState(false)
@@ -12,7 +13,9 @@ export default function LearningRoute() {
 	console.log('from learning route', answer)
 
 	return (
+		<div className='container'>
 		<section className='dashboard__wrapper'>
+			<Header />
 			{!hasAnswered ? (
 				<Learning
 					hasAnswered={hasAnswered}
@@ -28,5 +31,6 @@ export default function LearningRoute() {
 				</>
 			)}
 		</section>
+		</div>
 	)
 }

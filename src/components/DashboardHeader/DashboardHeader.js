@@ -16,9 +16,9 @@ export default function DashboardHeader({
 					</div>
 					<div className='header__item'>
 						<div>
-							<h2>Sukinairo wa?</h2>
+							<h2>Sukina nihongo no iro wa?</h2>
 							<p>
-								"Sukinairo wa?" means "What is your favotite color?" in {name}.
+								(What is your favorite color in {name}?)
 							</p>
 						</div>
 					</div>

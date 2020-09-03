@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import LoginForm from '../../components/LoginForm/LoginForm'
+import Header from '../../components/Header/Header'
 
 class LoginRoute extends Component {
   static defaultProps = {
@@ -17,7 +18,8 @@ class LoginRoute extends Component {
 
   render() {
     return (
-      <section>
+      <section className='container'>
+        <Header />
         <h2>Login</h2>
         <p></p>
         <LoginForm
