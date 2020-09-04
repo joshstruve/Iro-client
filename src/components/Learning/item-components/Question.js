@@ -1,5 +1,5 @@
 import React from 'react'
-// import ItemImage from '../../DashboardList/item-components/ItemImage'
+import LearningImage from './LearningImage'
 
 export default function Question({ nextWord, hex, script }) {
 	if (nextWord) {
@@ -8,7 +8,7 @@ export default function Question({ nextWord, hex, script }) {
 	return (
 		<section className='question'>
 			<h2>{nextWord}</h2>
-			{/* <ItemImage hex={hex} script={script} /> */}
+			{hex && script && <LearningImage hex={hex} script={script} />}
 			<div className='spacer-v'></div>
 			<p>
 				Watashi no sukinairo wa ___desu.

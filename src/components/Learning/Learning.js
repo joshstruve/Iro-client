@@ -80,8 +80,8 @@ export default function Learning({
 						 */
 					}
 				>
-					<Label htmlFor='learn-guess-input' />
 					<Input
+						aria-label='translate'
 						type='text'
 						id='learn-guess-input'
 						name='learn-guess-input'
