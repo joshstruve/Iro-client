@@ -37,7 +37,12 @@ Incorrect Answer
 ![Iro Incorrect Answer](./screenshots/Iro-incorrect-answer.png "Iro Incorrect Answer")
 
 ## Technology Stack
-React, Express, Node, Postgresql, HTML, CSS, JSON Web Tokens
+
+### Front End
+React , HTML, CSS, JSON Web Tokens
+
+### Back End
+Express, Node, Postgresql, JWT
 
 ## Links
 
