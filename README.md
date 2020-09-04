@@ -44,6 +44,9 @@ React , HTML, CSS, JSON Web Tokens
 ### Back End
 Express, Node, Postgresql, JWT
 
+### UX/UI
+Adobe XD
+
 ## Links
 
 ### Live App
