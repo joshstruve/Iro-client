@@ -3,8 +3,7 @@ import React from 'react'
 export default function ErrorBoundary() {
 	return (
 		<div>
-			<h2>404</h2>
-			<p>Sorry, but something went wrong!</p>
+			<h2>Sorry, but something went wrong!</h2>
 		</div>
 	)
 }

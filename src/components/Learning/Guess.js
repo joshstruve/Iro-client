@@ -3,6 +3,7 @@ import { MdCheckCircle } from 'react-icons/md'
 import config from '../../config'
 import TokenService from '../../services/token-service'
 import Score from './item-components/Score'
+import ErrorBoundary from '../ErrorBoundary/ErrorBoundary'
 
 export default function Guess({ setHasAnswered, answer }) {
 	const [head, setHead] = useState(null)
@@ -45,7 +46,9 @@ export default function Guess({ setHasAnswered, answer }) {
 		return () => {}
 	}, [answer, error])
 
-	return (
+	return error ? (
+		<ErrorBoundary />
+	) : (
 		<>
 			<div className='learning-total-score'>
 				<div className='learning-score-box-item'>

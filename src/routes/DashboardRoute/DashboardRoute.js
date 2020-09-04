@@ -9,7 +9,6 @@ export default function DashboardRoute() {
 	const [language, setLanguage] = useState({})
 	const [words, setWords] = useState([])
 	const [error, setError] = useState(null)
-	// on mount fetch data
 
 	useEffect(() => {
 		const getWords = async () => {
@@ -35,20 +34,23 @@ export default function DashboardRoute() {
 
 	return (
 		<div className='container-2'>
-		<section className='dashboard__wrapper'>
-			{error ? (
-				<ErrorBoundary />
-			) : (
-				<>
-					<Header />
-					<DashboardHeader error={error} {...language} />
-					<DashboardList error={error} words={words} />
-					<a href='/learn'>
-						<button>Start Learning</button>
-					</a>
-				</>
-			)}
-		</section>
+			<section className='dashboard__wrapper'>
+				{error ? (
+					<ErrorBoundary />
+				) : (
+					<>
+						<Header />
+						<DashboardHeader
+							error={error}
+							{...language}
+						/>
+						<DashboardList error={error} words={words} />
+						<a href='/learn'>
+							<button>Start Learning</button>
+						</a>
+					</>
+				)}
+			</section>
 		</div>
 	)
 }
