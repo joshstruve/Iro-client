@@ -4,9 +4,13 @@ Iro uses spaced repetition learning to teach you the words for a variety of colo
 
 ## Credits
 
+---
+
 Matt Patterson and Josh Struve.
 
 ## UI
+
+---
 
 ### Branding
 
@@ -39,21 +43,38 @@ Matt Patterson and Josh Struve.
 ## Technology Stack
 
 ### Front End
-React , HTML, CSS, JSON Web Tokens
+
+React, HTML, CSS, JSON Web Tokens
+
 
 ### Back End
+
 Express, Node, Postgresql, JWT
+- Dependencies: 
+  - Password encryption - `bycrpytjs`
+  - CORS cross-origin resource sharing - `cors`
+  - HTML header security- `helmet`
+  - JSON Web Token generation - `jsonwebtoken`
+  - Database queries - `knex`
+  - Backend Error/Status Logging - `morgan`
+  - PostgreSQl database management - `pg`
+  - Cross-site scripting attack protection - `xss`
+- Test Dependencies: 
+  - `chai`, `mocha`, `nodemon`, `supertest`
 
 ### UX/UI
+
 Adobe XD
 
 ## Links
 
 ### Live App
+
 url
 
 ### API Git
-https://github.com/thinkful-ei-panda/Iro-api
+
+[IO - Server Repository](https://github.com/thinkful-ei-panda/Iro-api)
 
 ---
 
