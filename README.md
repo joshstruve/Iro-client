@@ -20,7 +20,7 @@ Matt Patterson and Josh Struve.
 
 ![Iro Correct Answer](./screenshots/Iro-correct-answer.png "Iro Correct Answer")
 
-![Iro Incorrect Answer](.screenshots/Iro-incorrect-answer.png "Iro Incorrect Answer")
+![Iro Incorrect Answer](./screenshots/Iro-incorrect-answer.png "Iro Incorrect Answer")
 
 ## Setup
 
