@@ -8,31 +8,31 @@ Matt Patterson and Josh Struve.
 
 ## UI
 
-Branding
+### Branding
 
 ![Iro Branding](./screenshots/iro-branding.png "Iro Branding")
 
-Log In
+### Log In
 
 ![Iro Log In](./screenshots/Iro-login.png "Iro Log In")
 
-Sign Up
+### Sign Up
 
 ![Iro Sign Up](./screenshots/Iro-sign-up.png "Iro Sign Up")
 
-Dashboard
+### Dashboard
 
 ![Iro Dashboard](./screenshots/iro-dashboard.png "Iro Dashboard")
 
-Question
+### Question
 
 ![Iro Question](./screenshots/iro-question.png "Iro Question")
 
-Correct Answer
+### Correct Answer
 
 ![Iro Correct Answer](./screenshots/Iro-correct-answer.png "Iro Correct Answer")
 
-Incorrect Answer
+### Incorrect Answer
 
 ![Iro Incorrect Answer](./screenshots/Iro-incorrect-answer.png "Iro Incorrect Answer")
 
