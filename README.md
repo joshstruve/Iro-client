@@ -4,13 +4,9 @@ Iro uses spaced repetition learning to teach you the words for a variety of colo
 
 ## Credits
 
----
-
 Matt Patterson and Josh Struve.
 
 ## UI
-
----
 
 ### Branding
 
