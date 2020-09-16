@@ -139,6 +139,7 @@ button {
 	margin-bottom: 15px;
 	box-shadow: 0 2.5px 5px rgba(0,0,0,0.16), 0 2.5px 5px rgba(0,0,0,0.23);
 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	cursor: pointer;
 }
 
 footer {
@@ -359,5 +360,9 @@ a.button:visited {
 @media screen and (max-width: 600px) {
 	.container {
 		max-width: 90%;
+	}
+
+	.learning-card {
+		max-width: 100%;
 	}
 }
